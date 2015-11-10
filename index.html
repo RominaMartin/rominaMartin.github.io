@@ -52,16 +52,16 @@
           <ul>
             <li><div id="contact"></div></li>
             <li>
-             <form class="text" action="//formspree.io/rominamartin_4@hotmail.com" method="POST">
+             <form class="text" name="myForm" action="//formspree.io/rominamartin_4@hotmail.com" method="POST" onSubmit="alert('Mensaje enviado!')">
                 Name:
-                <input type="text" name="name" placeholder="Your name"> <br>
+                <input type="text" name="name" placeholder="Your name" required> <br>
                 Email:&nbsp
-                <input type="email" name="_replyto" placeholder="Your email"> <br>
+                <input type="email" name="_replyto" placeholder="Your email" required> <br>
                 Message: <br>
-                <textarea name="message" placeholder="Write down your message" rows="4" cols="50"></textarea><br><br>
-                <input type="hidden" name="_next" value="//RominaMartin.github.io" />
+                <textarea name="message" placeholder="Write down your message" rows="4" cols="50" required></textarea><br><br>
+                <input type="hidden" name="_next" value="http://RominaMartin.github.io/"/>
                 <input type="text" name="_gotcha" style="display:none" />
-                <input id="send-button" type="submit" value="Send" onclick="alert('Mensaje enviado!')">
+                <input id="send-button" type="submit" value="Send">
             </form>
             </li>
           </ul>
