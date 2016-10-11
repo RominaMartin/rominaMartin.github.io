@@ -1,12 +1,12 @@
 <html>
     <head>
         <title>Romina Martin</title>
-        
+        <meta charset="utf-8" />
         <meta property="og:title" content="DressItUp">
         <meta property="og:description" content="Juego en el que creas el estilo para un personaje">
         <meta property="og:image" content="images/initial.png">
         <meta property="og:url" content="http://rominamartin.github.io/">
-         <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
 
         <!-- Styles -->
         <link rel="shortcut icon" href="images/favicon.ico" />
@@ -20,59 +20,90 @@
     <body>
                 <!-- Header -->
         <header class="page-header container-fluid">
+            <a name="top"></a>
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
                     <h2>Hi! <a href="http://rominamartin.github.io/" class="highlight">I'm Romina</a><i class="fa fa-hand-peace-o"></i></h2>
                 </div>
 
                 <div class="menu btn-group col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-2" role="group">
-                    <a class="map hidden-xs col-sm-3" href="https://rominamartin.github.io/">Home</a>
-                    <a class="map hidden-xs col-sm-3" href="https://github.com/ROMI-WEB/DressItUp">Work</a>
-                    <a class="map hidden-xs col-sm-3" href="www.linkedin.com/in/rominamartinliberon">Contact</a>
-                    <a class="social col-xs-3 col-sm-1" href="https://rominamartin.github.io/"><img id="myWeb" src="images/brightIdea.png" alt="personalWeb"/></a>
-                    <a class="social col-xs-3 col-sm-1" href="https://github.com/ROMI-WEB/DressItUp"><img src="images/github.png" alt="linkedin"/></a>
-                    <a class="social col-xs-3 col-sm-1" href="www.linkedin.com/in/rominamartinliberon"><img src="images/linkedin.png" alt="github"/></a>
+                    <div id="map" class="row">
+                        <a class="map hidden-xs col-sm-3" href="#top">Home</a>
+                        <a class="map hidden-xs col-sm-3" href="#work">Work</a>
+                        <a class="map hidden-xs col-sm-3" href="#contact">Contact</a>
+                    </div>
+                    <div id="social" class="row col-sm-offset-3 col-xs-offset-2">
+                        <a class="social col-xs-3 col-sm-1" href="https://rominamartin.github.io/"><img id="myWeb" src="images/brightIdea.png" alt="personalWeb"/></a>
+                        <a class="social col-xs-3 col-sm-1" href="https://github.com/ROMI-WEB/DressItUp"><img src="images/github.png" alt="linkedin"/></a>
+                        <a class="social col-xs-3 col-sm-1" href="www.linkedin.com/in/rominamartinliberon"><img src="images/linkedin.png" alt="github"/></a>
+                    </div>
                 </div>
             </div>
         </header>
-<!--        <header class="page-header container-fluid">
+        <main>
             <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 ">
-                    <h2>Hi! <a href="http://rominamartin.github.io/" class="highlight">I'm Romina</a><i class="fa fa-hand-peace-o"></i></h2>
-                </div>
-
-                <div class="menu btn-group col-sm-10 col-sm-offset-2" role="group">
-                    <a class="map col-sm-3" href="https://rominamartin.github.io/">Home</a>
-                    <a class="map col-sm-3" href="https://github.com/ROMI-WEB/DressItUp">Work</a>
-                    <a class="map col-sm-3" href="www.linkedin.com/in/rominamartinliberon">Contact</a>
-                    <a class="social col-sm-1" href="https://rominamartin.github.io/"><img id="myWeb" src="images/brightIdea.png" alt="personalWeb"/></a>
-                    <a class="social col-sm-1" href="https://github.com/ROMI-WEB/DressItUp"><img src="images/github.png" alt="linkedin"/></a>
-                    <a class="social col-sm-1" href="www.linkedin.com/in/rominamartinliberon"><img src="images/linkedin.png" alt="github"/></a>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 content">
+                    <h3>Hola!</h3>
+                    <p>Mi nombre es Romina, soy informática y aficionada al front-end y el desarrollo móvil. Aquí encontrarás algunas de las cosas que he hecho</p>
                 </div>
             </div>
-        </header>-->
-
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 content">
+                    <a name="work"></a>
+                    <div class="row">
+                        <h3>Web</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2 img-responsive"> 
+                            <div class="caption">
+                                <h4>Music Player</h4>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="https://romi-web.github.io/MusicPlayerHTML5/"><img id="musicPlayer" src="images/musicPlayer.PNG" data-holder-rendered="true"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 img-responsive"> 
+                            <div class="caption">
+                                <h4>Emotions</h4>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="https://romi-web.github.io/EmotionRecognition/"><img id="emotionRecognition" src="images/emotion.PNG" data-holder-rendered="true"></a>
+                            </div>
+                        </div>             
+                        <div class="col-xs-6 col-sm-2 img-responsive"> 
+                            <div class="caption">
+                                <h4>Dress it up</h4>
+                            </div>
+                            <div class="thumbnail">
+                                <a href="https://romi-web.github.io/DressItUp/"><img id="dressItUp" src="images/dress.PNG" data-holder-rendered="true"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 content">
+                    <a name="contact"></a>
+                    <div class="row">
+                        <h3>Contact <i class="fa fa-paper-plane" aria-hidden="true"></i></h3>
+                    </div>
+                    <div class="row">
+                        <form class="text form- col-xs-10 col-xs-offset-1" name="myForm" action="//formspree.io/rominamartin_4@hotmail.com" method="POST" onSubmit="alert('Mensaje enviado!')">
+                            <input type="text" class="form-control" name="name" placeholder="Your name" required>
+                            <input type="email" class="form-control"  name="_replyto" placeholder="Your email" required>
+                            <textarea name="message" class="form-control"  placeholder="Write down your message" rows="4" cols="50" required></textarea>
+                            <input id="send-button" class="form-control"  type="submit" value="Send">
+                            <input type="hidden" name="_next" value="http://RominaMartin.github.io/"/>
+                            <input type="text" name="_gotcha" style="display:none" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
         
         
         
-<!--        
-      <div id="header">
-        <div>
-          <h1>Hi! <span class="highlight">I'm Romina </span><i class="fa fa-hand-peace-o"></i></h1>
-        </div>
-        <div id="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#im">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <ul class="social">
-                <li class="social"><a href="https://www.facebook.com/Romiiinaa" class="social"><img src="http://i.imgur.com/P0qFTI1.png" alt="fb"></img></a></li>
-                <li class="social"><a href="https://instagram.com/ovomaltina/" class="social"><img src="http://i.imgur.com/xbBOUxu.png" alt="instagram"></img></a></li>
-                <li class="social"><a href="https://github.com/RominaMartin" class="social"><img src="http://i.imgur.com/Pe0QqTY.png" alt="github"></img></a></li>
-            </ul>
-          </ul>
-        </div>
-      </div>
+<!--   
       <div id="content">
         <div class="sections" id="intro">
           <ul>

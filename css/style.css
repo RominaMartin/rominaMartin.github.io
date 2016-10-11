@@ -1,8 +1,52 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background: url("../images/background.png");
+  font-family: "Catamaran"; }
+
+.content {
+  text-align: justify;
+  background: url("../images/svgBackground.png");
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-family: "Catamaran"; }
+
+.content h3 {
+  color: #3fb0ac;
+  text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.1); }
+
+.content h3 i {
+  color: #CCC; }
+
+.content .row h3 {
+  margin-left: 2%; }
+
+.content p {
+  color: #CCC; }
+
+.thumbnail img {
+  width: 100%; }
+
+.caption {
+  text-align: center;
+  color: #CCC;
+  text-shadow: -2px 2px 0px rgba(63, 176, 172, 0.4); }
 
 @media (max-width: 400px) {
   .menu.map {
     display: none !important; } }
+#dressItUp:hover {
+  content: url("../images/previewDress.gif"); }
+
+#musicPlayer:hover {
+  content: url("../images/previewPlayer.gif"); }
+
+#emotionRecognition:hover {
+  content: url("../images/previewEmotions.gif"); }
+
+.form-group {
+  color: #3fb0ac; }
+
+.form-control {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
