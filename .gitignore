@@ -1,0 +1,9 @@
+/nbproject/*
+.gitignore
+/scss
+css/*.map
+*.less
+.gitignore
+*.scss
+design/
+*.css.map
