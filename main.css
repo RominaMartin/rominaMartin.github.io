@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #dae1e7;
+  --secondary-color: #00909e;
+  --bg-color: #e7edf1;
+  --title-color: #27496d;
+  --text-color: #142850;
+  --shadow-color: #aeb4ba;
+  --linkedin-color: #0073b0;
+  --gitpen-color: #24292e;
+  --twitter-color: #1da1f2;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--bg-color);
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow: hidden;
+}
+
+#container {
+  width: 50%;
+  height: 80%;
+  background: var(--primary-color);
+  position: relative;
+  margin: auto;
+  border: 5px solid var(--secondary-color);
+  min-width: 200px;
+  box-shadow: -4px 4px 8px var(--shadow-color);
+}
+
+.profile_picture {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+.profile_picture img {
+  width: 94%;
+  height: 94%;
+  margin: 3%;
+  border-radius: 50%;
+}
+#container h1 {
+  text-align: center;
+  margin-top: 15%;
+  color: var(--title-color);
+}
+
+#container p {
+  margin: 5% auto;
+  width: 70%;
+  text-align: justify;
+  color: var(--text-color);
+}
+
+.my_social {
+  text-align: center;
+}
+.my_social a {
+  display: inline-block;
+  height: 2.5em;
+}
+.my_social a i {
+  font-size: 1.5em;
+}
+.my_social a i.fa-linkedin {
+  color: var(--linkedin-color);
+}
+.my_social a i.fa-github,
+.my_social a i.fa-codepen {
+  color: var(--gitpen-color);
+}
+.my_social a i.fa-twitter {
+  color: var(--twitter-color);
+}
