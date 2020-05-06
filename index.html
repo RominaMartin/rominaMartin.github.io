@@ -3,40 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/" />
-    <link rel="stylesheet" href="main.css" />
-    <title>👋 I'm Romina</title>
+    <title>👋 Romina here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/index.js"></script>
   </head>
   <body>
-    <div id="container">
-      <div class="profile_picture">
-        <img
-          src="https://pbs.twimg.com/profile_images/1223413637018193920/PSMoRpRn_400x400.jpg"
-          alt="profile_picture"
-        />
+    <div class="container">
+      <div class="main_container">
+        <div class="page main active">
+          <img src="assets/profile.jpg" alt="Romina's profile picture" />
+          <h2>
+            Hi there! I'm Romina
+          </h2>
+          <p>
+            I'm a computer science engineer working as a developer
+            <a target="_blank" href="https://twitter.com/uDataAnalytics">@urbanDataAnalytics</a>
+          </p>
+          <p>I'm an introvert so you'll probably catch me with my 🎧 on most of the time</p>
+        </div>
+        <div class="page work">
+          <h2>Work 👩‍💻</h2>
+          <p>I was part of the frontend team but not long ago I joined the solutions one at my company</p>
+          <p>
+            Lately I've been using: Javascript, React, Node, Django and Python
+          </p>
+          <p>
+            Maps are in the radar for me as well so I've done some stuff with Leaflet, Mapbox and Carto
+          </p>
+        </div>
+        <div class="page education">
+          <h2>Education 🎓</h2>
+          <p>
+            I graduated as a computer science engineer at <span class="place">La Laguna University</span> in
+            <span class="year">2016</span>
+          </p>
+          <p>
+            I got my masters degree in mobile apps development at <span class="place">Pontificia University</span> in
+            <span class="year">2017</span>
+          </p>
+          <p>I've taken several courses over the last years but I'm a mess and I lost track of them</p>
+        </div>
+        <div class="page sideprojects">
+          <h2>Side projects 💡</h2>
+          <div class="slider_container">
+            <div class="slider">
+              <a class="slides" id="sp_slider_1" target="_blank" href="https://donatinghelps.com">
+                <img class="sp_img" src="assets/blood_donors.gif" alt="Blood donors compatibility preview" />
+                <span class="sp_footer">
+                  Blood types compatibilty
+                </span>
+              </a>
+              <a class="slides" id="sp_slider_2" target="_blank" href="https://codepen.io/RominaMartin/full/NewZrZ">
+                <img class="sp_img" src="assets/year_in_pixels.png" alt="Year in pixels preview" />
+                <span class="sp_footer">
+                  Year in pixels
+                </span>
+              </a>
+              <a class="slides" id="sp_slider_3" target="_blank" href="https://codepen.io/RominaMartin/full/eYmEVde">
+                <img class="sp_img" src="assets/monthly_words.png" alt="Monthly words preview" />
+                <span class="sp_footer">
+                  Monthly words
+                </span>
+              </a>
+              <a class="slides" id="sp_slider_4" target="_blank" href="https://codepen.io/RominaMartin/full/wxYJaZ">
+                <img class="sp_img" src="assets/follower_check.gif" alt="Followers check preview" />
+                <span class="sp_footer">
+                  Followers check
+                </span>
+              </a>
+            </div>
+            <div id="sp_slider" class="wrap">
+              <i class="material-icons-outlined prev">arrow_left</i>
+              <i class="material-icons-outlined next">arrow_right</i>
+            </div>
+          </div>
+
+          <p>
+            You can also check the stuff I've done lately at my
+            <a target="_blank" href="https://codepen.io/RominaMartin">codepen</a> profile
+          </p>
+        </div>
+        <div class="page hobbies">
+          <h2>Hobbies 🥏</h2>
+
+          <ul>
+            <li>
+              I practice Ultimate Frisbee, a sport where fair play is the most important
+            </li>
+            <li>Watching footbal matches. I'm quite a huge sports fan</li>
+            <li>Couch marathons (As I mentioned, sports fan)</li>
+            <li>Take time off from coding. I've learned it's quite important to disconnect sometimes</li>
+          </ul>
+        </div>
       </div>
-
-      <h1>Hello, I'm Romina 👋</h1>
-      <p>I'm filling this so you don't get an error if by any chance you try to check out my page.</p>
-      <p>
-        I'll set some info soon... or not. Here's my social media in case you want to check it out in the meanwhile.
-      </p>
-
-      <div class="my_social">
-        <a href="https://www.linkedin.com/in/rominamartinliberon/" target="_new" class="social">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/rominamartin" target="_new" class="social">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/rominamartinlib" target="_new" class="social">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://codepen.io/RominaMartin" target="_new" class="social">
-          <i class="fab fa-codepen"></i>
-        </a>
+      <div class="social">
+        <a target="_blank" href="https://codepen.io/RominaMartin">Twiter</a>
+        <a target="_blank" href="https://codepen.io/RominaMartin">Codepen</a>
+        <a target="_blank" href="https://codepen.io/RominaMartin">Github</a>
+      </div>
+      <div class="info_container">
+        <div class="navbar">
+          <div class="bottom main"></div>
+          <div class="people selected">
+            <i class="material-icons-outlined">group</i>
+            <span class="pc">People</span>
+            <span>(5)</span>
+          </div>
+          <div class="msg">
+            <i class="material-icons-outlined">chat</i>
+            <span class="pc">Chat</span>
+          </div>
+          <div class="info mob">
+            <i class="material-icons-outlined">info</i>
+          </div>
+        </div>
+        <div class="users active">
+          <div class="category main selected">
+            <div class="image">
+              <img src="assets/profile.jpg" alt="Romina's profile picture" />
+              <i class="material-icons mic">more_horiz</i>
+              <div class="overlay"></div>
+            </div>
+            <span class="cat_name">Romina Martin (You)</span>
+          </div>
+          <div class="category work">
+            <div class="image">
+              <i class="material-icons cat">work</i>
+              <i class="material-icons mic">mic_off</i>
+              <div class="overlay"></div>
+            </div>
+            <span class="cat_name">Work</span>
+          </div>
+          <div class="category education">
+            <div class="image">
+              <i class="material-icons cat">school</i>
+              <i class="material-icons mic">mic_off</i>
+              <div class="overlay"></div>
+            </div>
+            <span class="cat_name">Education</span>
+          </div>
+          <div class="category sideprojects">
+            <div class="image">
+              <i class="material-icons cat">emoji_objects</i>
+              <i class="material-icons mic">mic_off</i>
+              <div class="overlay"></div>
+            </div>
+            <span class="cat_name">Side projects</span>
+          </div>
+          <div class="category hobbies">
+            <div class="image">
+              <i class="material-icons cat">public</i>
+              <i class="material-icons mic">mic_off</i>
+              <div class="overlay"></div>
+            </div>
+            <span class="cat_name">Hobbies</span>
+          </div>
+        </div>
+        <div class="msg_container">
+          <div class="warning">
+            <p><b>You</b> <span id="time">11:20</span></p>
+            <p>Text me! If you hit <i class="material-icons">send</i> your message will be in a tweet for me</p>
+          </div>
+          <div class="send">
+            <input type="text" placeholder="Send a message to Romina" />
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Hello%20@rominamartinlib%20">
+              <i class="material-icons">send</i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
