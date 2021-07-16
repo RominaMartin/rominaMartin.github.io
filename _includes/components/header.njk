@@ -1,0 +1,9 @@
+<div class="menu">
+    {% if pageId !== 'home' %}
+        <a href="/" title="home" rel="noopener noreferrer">home</a>
+    {% endif %}
+    <a href="/about" title="about me" rel="noopener noreferrer"
+    {% if pageId === 'about' %} class="active" {% endif %}>about me</a>
+    <a href="/posts" title="posts" rel="noopener noreferrer"
+    {% if pageId === 'posts' %} class="active" {% endif %}>posts</a>
+</div>

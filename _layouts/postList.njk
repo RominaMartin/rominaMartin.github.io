@@ -1,0 +1,15 @@
+<ul class="post_list">
+  {% for post in collections.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+      <span>{{ post.data.description }}</span>
+    </a>
+    <div class="tags">
+      {%- for tag in post.data.tags -%} {% if tag !== 'posts' %}
+      <span title="{{ tag }}" class="{{ tag }}">{{ tag }}</span>
+      {%- endif -%} {%- endfor -%}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

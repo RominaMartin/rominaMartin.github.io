@@ -1,0 +1,100 @@
+.post,
+.posts {
+  position: relative;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  height: calc(100vh - 2rem - 90px);
+  top: calc(2em + 10px);
+}
+
+.post > div {
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+}
+
+.post_list {
+  width: 50vw;
+  padding: 0;
+  list-style: none;
+  left: 25vw;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.post_list li {
+  margin: 25px 0;
+}
+
+.post_list li h2 {
+  margin: 0;
+  color: var(--main_color);
+}
+
+.post_list li span {
+  color: var(--sec_color);
+}
+
+.post_list li .tags span {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.post_list li .tags span:hover {
+  font-weight: bold;
+}
+
+.post_list li .tags span {
+  display: inline-block;
+}
+
+.post_list li .tags span::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.personal {
+  background-color: var(--personal);
+}
+.coding {
+  background-color: var(--coding);
+}
+.rant {
+  background-color: var(--rant);
+}
+
+.config {
+  background-color: var(--config);
+}
+.annotation {
+  font-style: italic;
+  color: var(--sec_color);
+  top: calc(2em + 10px);
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.post h1 {
+  background-color: var(--body_bg_color);
+  z-index: 1;
+  width: 50vw;
+  text-decoration: underline var(--sec_color_hover);
+  margin: 0;
+  padding-top: 15px;
+  top: 0;
+}
+
+.post p {
+  line-height: 1.5rem;
+}
+
+.post p:first-child {
+  margin-top: 75px;
+}
