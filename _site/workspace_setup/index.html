@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/style/splitting.css"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>RM | Posts</title>
+        <title>Mi entorno de trabajo</title>
     </head>
     <body>
         <main>
@@ -18,29 +18,53 @@
     <a href="/about" title="about me" rel="noopener noreferrer"
     >about me</a>
     <a href="/posts" title="posts" rel="noopener noreferrer"
-     class="active" >posts</a>
+    >posts</a>
 </div>
 
-                <div class="posts"><ul class="post_list">
-  <li>
-    <a href="/workspace_setup/">
-      <h2>Mi entorno de trabajo</h2>
-      <span>Pasos a seguir para replicar mi entorno de trabajo en un dispositivo nuevo</span>
-    </a>
-    <div class="tags">
-      <span>🇪🇸</span>
-      <span title="config" class="config">config</span></div>
-  </li>
-  <li>
-    <a href="/second_post/">
-      <h2>Why do I keep writting in english</h2>
-      <span>I can&#39;t help but writting most of my stuff in english</span>
-    </a>
-    <div class="tags">
-      <span>🇬🇧</span>
-      <span title="personal" class="personal">personal</span></div>
-  </li>
+                
+<div class="post">
+  <div>
+    <h1>Mi entorno de trabajo</h1>
+    <p>Tras formatear el ordenador o empezar a usar uno nuevo paso por el &quot;dolor&quot; de configurarlo nuevamente o recordar las herramientas que uso. Por eso me decidí a listar aquí los pasos a seguir para que la próxima vez sea más directo.</p>
+<h2>vscode</h2>
+<p>La extensión <a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Sync settings</a> hace todo el trabajo, así que bastará con tenerla en el vscode, iniciar sesión en github y se sincronizará <em>automágicamente</em>.</p>
+<h2>ohmyzsh</h2>
+<pre><code class="language-bash">  # filename: .zshrc
+  export ZSH=&quot;/home/romina/.oh-my-zsh&quot;
+
+  ZSH_THEME=&quot;agnoster&quot;
+  DEFAULT_USER=romina
+
+  plugins=(last-working-dir zsh-nvm)
+
+  source $ZSH/oh-my-zsh.sh
+
+  # git
+  alias gclean='git branch | grep -v &quot;master\|develop&quot; | xargs git branch -D'
+  alias grecommit=&quot;git commit --amend&quot;
+  alias guncommit=&quot;reset --soft HEAD&quot;
+  alias gunstage=&quot;reset HEAD --&quot;
+
+  #ohmyzsh
+  alias zshconfig=&quot;vim ~/.zshrc&quot;
+  alias zshsource=&quot;source ~/.zshrc&quot;
+
+</code></pre>
+<h2>Herramientas de uso cotidiano</h2>
+<ul>
+<li><strong><a href="https://github.com/Ulauncher/Ulauncher">Ulauncher</a></strong>
+<ul>
+<li><a href="https://github.com/FloydJohn/ulauncher-chrome-profiles">chrome-profiles</a></li>
+<li><a href="https://github.com/friday/ulauncher-clipboard">clipboard:</a> using <a href="https://github.com/hluk/CopyQ">CopyQ</a></li>
+<li><a href="https://github.com/Ulauncher/ulauncher-emoji">emoji</a></li>
+<li><a href="https://github.com/pbkhrv/ulauncher-notes-nv">notes</a></li>
 </ul>
+</li>
+<li><strong><a href="https://christian.amsuess.com/tools/arandr/">ARandR</a></strong></li>
+<li><strong><a href="https://github.com/phillipberndt/autorandr">autorandr</a></strong></li>
+</ul>
+
+  </div>
 </div>
 
             

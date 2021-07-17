@@ -6,6 +6,7 @@
       <span>{{ post.data.description }}</span>
     </a>
     <div class="tags">
+      <span>{{ post.data.lang }}</span>
       {%- for tag in post.data.tags -%} {% if tag !== 'posts' %}
       <span title="{{ tag }}" class="{{ tag }}">{{ tag }}</span>
       {%- endif -%} {%- endfor -%}

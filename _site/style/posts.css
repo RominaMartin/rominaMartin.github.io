@@ -3,15 +3,21 @@
   position: relative;
   box-sizing: border-box;
   overflow-y: auto;
-
+  overflow-x: hidden;
   height: calc(100vh - 2rem - 90px);
   top: calc(2em + 10px);
+  text-align: justify;
 }
 
 .post > div {
   position: absolute;
   width: 50vw;
   left: 25vw;
+  top: calc(2rem + 10px);
+}
+
+pre {
+  white-space: pre-line;
 }
 
 .post_list {
@@ -42,9 +48,9 @@
   padding: 0 4px;
   border-radius: 2px;
 }
-.post_list li .tags span:hover {
+/* .post_list li .tags span:hover {
   font-weight: bold;
-}
+} */
 
 .post_list li .tags span {
   display: inline-block;
@@ -59,40 +65,41 @@
   visibility: hidden;
 }
 
+.post_list h2 {
+  padding-bottom: 0.25rem;
+}
+
 .personal {
   background-color: var(--personal);
 }
 .coding {
   background-color: var(--coding);
 }
-.rant {
-  background-color: var(--rant);
+.frontend {
+  background-color: var(--frontend);
 }
 
 .config {
   background-color: var(--config);
-}
-.annotation {
-  font-style: italic;
-  color: var(--sec_color);
-  top: calc(2em + 10px);
-  width: 100%;
-  text-align: center;
-  display: block;
 }
 
 .post h1 {
   background-color: var(--body_bg_color);
   z-index: 1;
   width: 50vw;
-  text-decoration: underline var(--sec_color_hover);
   margin: 0;
-  padding-top: 15px;
+  padding: 15px 0 5px 0;
   top: 0;
+  position: sticky;
 }
 
+.post h2 {
+  border-bottom: 2px solid var(--sec_color_hover);
+  width: max-content;
+}
 .post p {
   line-height: 1.5rem;
+  text-indent: 2rem;
 }
 
 .post p:first-child {
