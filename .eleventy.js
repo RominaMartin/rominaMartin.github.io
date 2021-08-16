@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       layouts: "_layouts",
+      output: "docs",
     },
   };
 };
