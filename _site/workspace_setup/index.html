@@ -17,8 +17,8 @@
     
     <a href="/about" title="about me" rel="noopener noreferrer"
     >about me</a>
-    <a href="/posts" title="posts" rel="noopener noreferrer"
-    >posts</a>
+    <!-- <a href="/posts" title="posts" rel="noopener noreferrer"
+    >posts</a> -->
 </div>
 
                 
@@ -40,10 +40,10 @@
   source $ZSH/oh-my-zsh.sh
 
   # git
-  alias gclean='git branch | grep -v &quot;master\|develop&quot; | xargs git branch -D'
-  alias grecommit=&quot;git commit --amend&quot;
-  alias guncommit=&quot;reset --soft HEAD&quot;
-  alias gunstage=&quot;reset HEAD --&quot;
+  alias gitclean='git branch | grep -v &quot;master\|develop&quot; | xargs git branch -D'
+  alias gitrename=&quot;git commit --amend&quot;
+  alias gitundo=&quot;git reset --soft HEAD&quot;
+  alias gitunstage=&quot;git reset HEAD --&quot;
 
   #ohmyzsh
   alias zshconfig=&quot;vim ~/.zshrc&quot;

@@ -26,10 +26,10 @@ La extensión [Sync settings](https://marketplace.visualstudio.com/items?itemNam
   source $ZSH/oh-my-zsh.sh
 
   # git
-  alias gclean='git branch | grep -v "master\|develop" | xargs git branch -D'
-  alias grecommit="git commit --amend"
-  alias guncommit="reset --soft HEAD"
-  alias gunstage="reset HEAD --"
+  alias gitclean='git branch | grep -v "master\|develop" | xargs git branch -D'
+  alias gitrename="git commit --amend"
+  alias gitundo="git reset --soft HEAD"
+  alias gitunstage="git reset HEAD --"
 
   #ohmyzsh
   alias zshconfig="vim ~/.zshrc"
