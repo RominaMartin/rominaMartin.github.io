@@ -16,7 +16,8 @@
   margin: 0.5rem;
 }
 
-.social a svg:hover {
+.social a svg:hover,
+.social a svg:active {
   height: 1.5rem;
   stroke: var(--sec_color_hover);
 }

@@ -48,10 +48,6 @@ pre {
   padding: 0 4px;
   border-radius: 2px;
 }
-/* .post_list li .tags span:hover {
-  font-weight: bold;
-} */
-
 .post_list li .tags span {
   display: inline-block;
 }

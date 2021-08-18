@@ -41,7 +41,8 @@ a {
   position: relative;
 }
 
-a:hover {
+a:hover,
+a:active {
   color: var(--sec_color_hover);
 }
 
@@ -74,7 +75,8 @@ main {
   z-index: 2;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:active {
   font-weight: bold;
   color: var(--sec_color);
 }

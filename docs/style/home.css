@@ -26,13 +26,16 @@ span .word:first-child span.char:first-child {
   gap: 0.25rem;
 }
 
-.home .name:hover ~ .me {
+.home .name:hover ~ .me,
+.home .name:active ~ .me {
   bottom: 0;
   filter: grayscale(0);
 }
 
 .home .name:hover .char,
-.me:hover ~ .name:not(:hover) .char {
+.me:hover ~ .name:not(:hover) .char,
+.home .name:active .char,
+.me:active ~ .name:not(:active) .char {
   animation: breathe 1s alternate both;
   animation-delay: calc((var(--char-index) + 1) * 100ms);
   cursor: default;
