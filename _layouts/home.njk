@@ -6,13 +6,13 @@ pageId: home
 <div class="home">
   <span class="name" data-splitting="">Romina Martín</span>
   <span>
-      {{ info.title }}
-      <a href="{{ info.company.link }} target=" _blank">
-          @{{ info.company.name }}
-      </a>
+    {{ info.title }}
+    <a href="{{ info.company.link }}" target=" _blank">
+      @{{ info.company.name }}
+    </a>
   </span>
   {% include "components/social.njk" %}
   <div class="me">
-      <img src="/assets/profile.png" alt="my profile picture" />
+    <img src="/assets/profile.png" alt="my profile picture" />
   </div>
 </div>
