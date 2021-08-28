@@ -16,7 +16,7 @@
   top: calc(2rem + 10px);
 }
 
-pre {
+.post pre {
   white-space: pre-line;
 }
 
@@ -48,6 +48,7 @@ pre {
   padding: 0 4px;
   border-radius: 2px;
 }
+
 .post_list li .tags span {
   display: inline-block;
 }

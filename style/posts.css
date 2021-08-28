@@ -16,7 +16,7 @@
   top: calc(2rem + 10px);
 }
 
-pre {
+.post pre {
   white-space: pre-line;
 }
 

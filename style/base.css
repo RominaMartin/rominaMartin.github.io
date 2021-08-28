@@ -135,3 +135,9 @@ main {
 .about p {
   margin: 2rem 0;
 }
+
+.about code .key {
+}
+
+.about code .value {
+}
