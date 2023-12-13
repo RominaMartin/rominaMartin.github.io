@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Movement;
+  src: url("../assets/MovementV.ttf");
+  text-rendering: optimizeLegibility;
+}
+
 span.char {
   font-size: clamp(3rem, 10vw - 1rem, 4rem);
   color: var(--main_color);
